@@ -61,7 +61,10 @@
   {% include "includes/scripts.html" %}
 
   <!-- Specific JS goes HERE --> 
-  {% block javascripts %}{% endblock javascripts %}  
+  {% block javascripts %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.0/echarts.min.js"></script>
+  <script src="{{ config.ASSETS_ROOT }}/js/plots/pie_chart.js"></script>
+  {% endblock javascripts %}
 
   <script>
     var win = navigator.platform.indexOf('Win') > -1;

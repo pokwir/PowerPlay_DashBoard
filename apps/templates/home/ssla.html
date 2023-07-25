@@ -116,11 +116,12 @@
                     </a>
                   </div>
                 </div>
+
                 <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
                   <div class="bg-gradient-primary border-radius-lg h-100" style="background: none;"> <!-- Adjust the background here -->
                     <img src="{{ config.ASSETS_ROOT }}/img/shapes/waves-white.svg" class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
                     <div class="position-relative d-flex align-items-center justify-content-center h-100">
-                      <img class="w-100 position-relative z-index-2 pt-4" src="{{ config.ASSETS_ROOT }}/img/illustrations/rocket-dark.png" alt="sportswoman"> <!-- change image here -->
+                      <div id="chart-container" style="width: 200px; height: 200px;"></div> 
                     </div>
                   </div>
                 </div>
@@ -629,7 +630,6 @@
       {% include "includes/footer.html" %}
 
     </div>
-
 {% endblock content %}
 
 <!-- Specific JS goes HERE --> 
@@ -703,7 +703,7 @@
       },
     });
 
-    
+
     var ctx2 = document.getElementById("chart-line").getContext("2d");
 
     var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
@@ -806,5 +806,6 @@
       },
     });
   </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.0/echarts.min.js"></script>
+  <script src="{{ config.ASSETS_ROOT }}/js/plots/pie_chart.js"></script>
 {% endblock javascripts %}
