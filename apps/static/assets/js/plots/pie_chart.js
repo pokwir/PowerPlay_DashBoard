@@ -35,27 +35,42 @@ option = {
     {
       name: '',
       type: 'pie',
-      radius: [20, 105],
+      radius: [10, 115],
       center: ['50%', '50%'],
       roseType: 'area',
       itemStyle: {
-        borderRadius: 8
+        borderRadius: 5
       },
       labelLine: {show: false},
-      label: {show: false},
+      label: {show: true, 
+      formatter: '{b} : {c} ({d}%)', 
+      fontSize: 10,
+      fontFamily: "open sans", 
+      position: 'inside', 
+      padding: [0, -50, 0, 0],
+      rich: {alignTo: "labelLine"
+            },
+          },
       data: [
-        { value: 75, name: "Black" },
-        { value: 12, name: "White" },
+        { value: 100, name: "Black" },
+        { value: 75, name: "White" },
         { value: 75, name: "Latina" },
         { value: 44, name: "Indian" },
         { value: 68, name: "Asian" },
-        { value: 38, name: "Other" },
+        { value: 10, name: "Other" },
       ],
     },
   ],
   tooltip: {
     trigger: "item",
     formatter: "{a} <br/>{b} : {c} ({d}%)",
+    backgroundColor: "rgba(0,0,0,0.7)",
+    padding: [10, 15],
+    textStyle: {
+      color: "#fff",
+      fontSize: 13,
+      fontFamily: "open sans",
+    }
   },
 };
 
