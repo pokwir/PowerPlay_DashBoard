@@ -35,7 +35,7 @@ option = {
     {
       name: '',
       type: 'pie',
-      radius: [10, 105],
+      radius: [20, 105],
       center: ['50%', '50%'],
       roseType: 'area',
       itemStyle: {
@@ -44,12 +44,12 @@ option = {
       labelLine: {show: false},
       label: {show: false},
       data: [
-        { value: 50, name: "Black" },
-        { value: 38, name: "White" },
-        { value: 32, name: "Latina" },
-        { value: 30, name: "Indian" },
+        { value: 75, name: "Black" },
+        { value: 12, name: "White" },
+        { value: 75, name: "Latina" },
+        { value: 44, name: "Indian" },
         { value: 68, name: "Asian" },
-        { value: 26, name: "Other" },
+        { value: 38, name: "Other" },
       ],
     },
   ],
