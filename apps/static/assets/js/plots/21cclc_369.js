@@ -1,7 +1,7 @@
 // echarts_pie_chart.js
 
 // Initialize the ECharts instance
-var dom = document.getElementById('chart-container');
+var dom = document.getElementById('chart-369');
 var myChart = echarts.init(dom, null, {
   renderer: 'canvas',
   useDirtyRect: false
@@ -35,7 +35,7 @@ option = {
     {
       name: '',
       type: 'pie',
-      radius: [10, 115],
+      radius: [15, 115],
       center: ['50%', '50%'],
       roseType: 'area',
       itemStyle: {
@@ -47,17 +47,15 @@ option = {
       fontSize: 10,
       fontFamily: "open sans", 
       position: 'inside', 
-      padding: [0, -50, 0, -50],
+      padding: [0, -50, 0, 0],
       rich: {alignTo: "position"
             },
           },
       data: [
-        { value: 100, name: "Black" },
-        { value: 75, name: "White" },
-        { value: 75, name: "Latina" },
-        { value: 44, name: "Indian" },
-        { value: 68, name: "Asian" },
-        { value: 10, name: "Other" },
+        { value: 40, name: "Under 30" },
+        { value: 60, name: "30-60" },
+        { value: 30, name: "61-90" },
+        { value: 120, name: "90+" },
       ],
     },
   ],

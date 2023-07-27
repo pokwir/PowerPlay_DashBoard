@@ -101,30 +101,26 @@
       </div>
 
       <div class="row mt-4">
-        <div class="col-lg-7 mb-lg-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-column h-100">
-                    <p class="mb-1 pt-2 text-bold">Program Highlihts</p>
-                    <h5 class="font-weight-bolder">Social Emotional Learning</h5>
-                    <p class="mb-5">Making meaning — utilizing research-based paractices to refine program outcomes.</p>
-                    <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto" href="javascript:;"> <!-- Adjust the link here -->
-                      Read More
-                      <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
-                  <div class="bg-gradient-primary border-radius-lg h-100" style="background: none;"> <!-- Adjust the background here -->
-                    <img src="{{ config.ASSETS_ROOT }}/img/shapes/waves-white.svg" class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
-                    <div class="position-relative d-flex align-items-center justify-content-center h-100">
-                      <img class="w-100 position-relative z-index-2 pt-4" src="{{ config.ASSETS_ROOT }}/img/illustrations/rocket-dark.png" alt="sportswoman"> <!-- change image here -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 p-3">
+            <!-- content -->
+            <div class="d-flex flex-column h-100">
+              <p class="mb-1 pt-2 text-bold">Program Highlihts</p>
+              <h5 class="font-weight-bolder">Social Emotional Learning</h5>
+              <p class="mb-5">Making meaning — utilizing research-based paractices to refine program outcomes.</p>
+              <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto" href="javascript:;"> <!-- Adjust the link here -->
+                Read More
+                <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 p-3">
+            <!-- content -->
+            <p class="mb-0 pt-1 text-bold">Ethnicity</p>
+            <div class="position-relative d-flex align-items-center justify-content-center h-100">
+              <div id="chart-container" style="width: 300px; height: 230px;"></div> 
             </div>
           </div>
         </div>
@@ -806,5 +802,6 @@
       },
     });
   </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.0/echarts.min.js"></script>
+  <script src="{{ config.ASSETS_ROOT }}/js/plots/pie_chart.js"></script>
 {% endblock javascripts %}
