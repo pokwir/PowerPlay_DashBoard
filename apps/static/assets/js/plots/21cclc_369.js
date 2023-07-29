@@ -52,9 +52,9 @@ option = {
             },
           },
       data: [
-        { value: 40, name: "Under 30" },
-        { value: 60, name: "30-60" },
-        { value: 30, name: "61-90" },
+        { value: 5, name: "Under 30" },
+        { value: 30, name: "30-60" },
+        { value: 60, name: "61-90" },
         { value: 120, name: "90+" },
       ],
     },
