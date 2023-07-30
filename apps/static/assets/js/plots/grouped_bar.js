@@ -8,22 +8,22 @@ new Chart(ctx, {
     datasets: [
       {
         label: "Boys",
-        backgroundColor: "rgb(255, 112, 112)", // Red
+        backgroundColor: "rgb(93, 123, 217)", // Blue
         data: [55, 83, 65],
-        maxBarThickness: 50,
+        maxBarThickness: 40,
         tension: 0.4,
         borderWidth: 0,
-        borderRadius: 10,
+        borderRadius: 20,
         borderSkipped: false,
       },
       {
         label: "Girls",
-        backgroundColor: "rgb(93, 123, 217)", // Purple
+        backgroundColor: "rgb(159, 225, 128)", // Purple
         data: [59, 79, 75],
-        maxBarThickness: 50,
+        maxBarThickness: 40,
         tension: 0.4,
         borderWidth: 0,
-        borderRadius: 10,
+        borderRadius: 20,
         borderSkipped: false,
       },
     ],
@@ -59,7 +59,7 @@ new Chart(ctx, {
             style: "normal",
             lineHeight: 2,
           },
-          color: "blue",
+          color: '#b2b9bf',
         },
       },
       x: {
@@ -80,7 +80,7 @@ new Chart(ctx, {
             style: "normal",
             lineHeight: 2,
           },
-          color: "blue",
+          color: '#b2b9bf',
         },
       },
     },

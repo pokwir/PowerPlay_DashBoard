@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 """
-Copyright (c) 2019 - present AppSeed.us
+Copyright (c) 2023 - Patrick Okwir
 """
 
 import os, random, string
@@ -10,7 +10,9 @@ class Config(object):
     basedir = os.path.abspath(os.path.dirname(__file__))
 
     # Assets Management
-    ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets')  
+    ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets')
+    JS_PLOTS_ROOT = os.getenv('JS_PLOT_ROOT', '/static/assets/js/plots')
+
     
     # Set up the App SECRET_KEY
     SECRET_KEY  = os.getenv('SECRET_KEY', None)
