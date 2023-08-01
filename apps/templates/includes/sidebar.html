@@ -10,9 +10,11 @@
      <!-- ... existing code for the sidebar items ... -->
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
+        <button id="toggleSidebar" class="btn btn-primary btn-toggle-sidebar">Toggle Sidebar</button>
+
         <!-- Dashboard Tab -->
         <li class="nav-item">
-          <a class="nav-link {% if 'index' in segment %} active {% endif %}" href="/index.html">
+          <a class="nav-link {% if 'stars' in segment %} active {% endif %}" href="/stars.html">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop </title>
@@ -28,7 +30,7 @@
                 </g>
               </svg>
             </div>
-            <span class="nav-link-text ms-1">Dashboard</span>
+            <span class="nav-link-text ms-1">STARS Series</span>
           </a>
         </li>
         <!-- End of Dashboard Tab -->
