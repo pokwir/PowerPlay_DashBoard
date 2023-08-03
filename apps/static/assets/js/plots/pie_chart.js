@@ -35,11 +35,11 @@ option = {
     {
       name: '',
       type: 'pie',
-      radius: [10, 115],
+      radius: [35, 180],
       center: ['50%', '50%'],
       roseType: 'area',
       itemStyle: {
-        borderRadius: 5
+        borderRadius: 3
       },
       labelLine: {show: true},
       label: {show: true, 

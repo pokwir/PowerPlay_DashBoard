@@ -11,7 +11,7 @@ new Chart(ctx, {
         backgroundColor: "rgb(93, 123, 217)", // Blue
         data: [55, 83, 65],
         maxBarThickness: 40,
-        tension: 0.4,
+        tension: 0.8,
         borderWidth: 0,
         borderRadius: 20,
         borderSkipped: false,
