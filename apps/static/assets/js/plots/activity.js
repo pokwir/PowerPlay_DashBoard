@@ -4,8 +4,8 @@ var chartDom = document.getElementById('activity-chart');
 
     const gaugeData = [
       {
-        value: 30,
-        name: '60',
+        value: 96,
+        name: '90+',
         title: {
           offsetCenter: ['0%', '-25%']
         },
@@ -15,7 +15,7 @@ var chartDom = document.getElementById('activity-chart');
         }
       },
       {
-        value: 60,
+        value: 83,
         name: '90',
         title: {
           offsetCenter: ['0%', '0%']
@@ -26,8 +26,8 @@ var chartDom = document.getElementById('activity-chart');
         }
       },
       {
-        value: 120,
-        name: '90+',
+        value: 40,
+        name: '60',
         title: {
           offsetCenter: ['0%', '25%']
         },
@@ -54,7 +54,7 @@ var chartDom = document.getElementById('activity-chart');
             clip: false,
             itemStyle: {
               borderWidth: 0.5,
-              borderColor: 'none',
+              borderColor: 'transparent',
             }
           },
           axisLine: {
@@ -82,7 +82,7 @@ var chartDom = document.getElementById('activity-chart');
             width: 0,
             height: 10,
             fontSize: 10,
-            color: 'inherit',
+            color: '#b2b9bf',
             borderColor: 'inherit',
             borderRadius: 10,
             borderWidth: 1,
